@@ -6,9 +6,11 @@ $agil = array (
 );
 
 $toplamkoyun = $agil["toplamkoyun"];
+$toplamkapasite = $agil["kapasite"]*$agil["sayi"];
+
 
 echo "Toplam Ağıl: " . $agil["sayi"] . "<br>";
-echo "Toplam Kapasite: " . $agil["kapasite"]*$agil["sayi"]. "<br>";
+echo "Toplam Kapasite: $toplamkapasite <br>";
 echo "Toplam Koyun: " . $agil["toplamkoyun"] . "<br><br>";
 
 
@@ -30,11 +32,11 @@ foreach ($cıktı as $sonuc){
 echo "<br><br>";
 
 
-$toplamkapasite = $agil["kapasite"]*$agil["sayi"];
 
+$disardakalan = $agil["toplamkoyun"] - $toplamkapasite;
 
 if(($agil["toplamkoyun"]-($toplamkapasite)) > 0) {
-    echo "Dışarıda Kalan: ".($agil["toplamkoyun"] - $toplamkapasite)." Koyun.<br><hr>";
+    echo "Dışarıda Kalan: $disardakalan Koyun<br><hr>";
 }
 else{
     echo "<br><hr>";
