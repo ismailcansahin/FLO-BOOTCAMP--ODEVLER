@@ -81,15 +81,7 @@
         echo "<tr>";
             foreach($products as $key => $value){
                 
-                if($key == 2){
-                    echo"<td>"."$value"."</td>";
-                }
-                else if ($key == 1){
-                    echo"<td>"."$value"."</td>";
-                }
-                else if ($key == 0){
-                    echo"<td>"."$value"."</td>";
-                }
+                
            }
         echo "</tr>";
     }
