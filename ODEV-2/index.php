@@ -1,113 +1,91 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLO SEPET</title>
+    <title>Document</title>
 </head>
-<body style="text-align:center">
-
+<body>
+    <h3 style="text-align:center">ÜRÜN SATIN AL</h3>
     <?php
-    
-    $urun = array ();
-    $urun[0] = array ("urunadi" => "Ülker Çikolatalı Gofret 40 gr.", "fiyat" => 10);
-    $urun[1] = array ("urunadi" => "Eti Damak Kare Çikolata 60 gr.", "fiyat" => 20);
-    $urun[2] = array ("urunadi" => "Nestle Bitter Çikolata 50 gr.", "fiyat" => 20);
+        $urunler = array (
+            array("no" => "urun1", "urun" => "Ülker Gofret", "fiyat" => "10"),
+            array("no" => "urun2", "urun" => "Kent Gofret", "fiyat" => "20"),
+            array("no" => "urun3", "urun" => "Eti Gofret", "fiyat" => "30"),
+            array("no" => "urun4", "urun" => "Torku Gofret", "fiyat" => "40"),
+            array("no" => "urun5", "urun" => "Nestle Gofret", "fiyat" =>"50")
+        );
 
+        echo " <table width='100%' border='1'> 
+        <tr>
+            <td width='60%'>Ürün Açıklaması</td>
+            <td width='20%'>Ürün Fiyatı</td>
+            <td width='20%'>Adet</td>
+        </tr>";
+
+        foreach($urunler as $urun){
+            echo "<tr>
+            <td>$urun[urun]</td>
+            <td>$urun[fiyat] ₺</td>
+            <td>
+                <form action='islem.php?hareket=ekle' method='post'>
+                <input type='text' name='adet'>
+                <input type='hidden' name='urun' value='$urun[no]'>
+                <input type='submit' value='Ekle'>
+                </form>
+            </td>
+            </tr>";
+            }
+
+        echo "</table>";
+
+        $sepetsay = count($_SESSION["sepet"]);
+
+        echo "<br><br><h3 style='text-align:center'>SEPET İÇERİĞİ($sepetsay)</h3>";
+    
+        if($sepetsay > 0){
+            echo "<table width='100%' border='1'> 
+            <tr>
+                <td width='40%'>Ürün Açıklaması</td>
+                <td width='15%'>Fiyat</td>
+                <td width='15%'>Adet</td>
+                <td width='15%'>Toplam</td>
+                <td width='15%'>Sil</td>
+            </tr>";
+    
+            $sepettoplam = 0;
+    
+         foreach($_SESSION["sepet"] as $urunno => $urunadet){
+                
+                $urunsira = array_search($urunno, array_column($urunler, 'no'));
+                $urunad = $urunler[$urunsira]["urun"];
+                $urunfiyat = $urunler[$urunsira]["fiyat"];
+                $uruntoplam = $urunadet * $urunfiyat;
+                $sepettoplam += $uruntoplam;
+                
+                echo "<tr>
+                <td>$urunad</td>
+                <td>$urunfiyat ₺</td>
+                <td>$urunadet</td>
+                <td>$uruntoplam ₺</td>
+                <td><a href='islem.php?hareket=sil&urunno=$urunno'>Sil</a></td>
+                </tr>";
+          }
+          echo "</table>
+          <p style='text-align:right'>
+            <a href='islem.php?hareket=bosalt' onclick=\"if (!confirm('Sepetteki Tüm Ürünleri Silmek İstediğinize Emin misiniz?')) return false;\">Sepeti Boşalt</a>
+          </p>
+          <h4 style='text-align:right'>Sepet Toplamı: $sepettoplam ₺</h4>";
+          } 
+         else
+         {
+         echo "<h5 style='text-align:center'>SEPET İÇERİĞİ BOŞ!</h5>";
+         }    
     ?>
-
-    <form action="" method="post">
-        <table border='1' width='100%'>
-        <thead>
-            <tr>
-                <th>Ürün Adı</th>
-                <th>Ürün Fiyatı</th>
-                <th>Adet</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><?php echo $urun[0]['urunadi']; ?></td>
-                <td><?php echo $urun[0]['fiyat']." TL."; ?></td>
-                <td><input type="number" name="urun0" value="0" ></td>
-            </tr>
-            <tr>
-                <td><?php echo $urun[1]['urunadi']; ?></td>
-                <td><?php echo $urun[1]['fiyat']." TL."; ?></td>
-                <td><input type="number" name="urun1" value="0"></td>
-            </tr>
-            <tr>
-                <td><?php echo $urun[2]['urunadi']; ?></td>
-                <td><?php echo $urun[2]['fiyat']." TL."; ?></td>
-                <td><input type="number" name="urun2" value="0"></td>
-            </tr> 
-        </tbody>
-        </table>
-        <br><br>
-        <input style= "text-align:right" type="submit" value="Sepete Ekle">
-        <br><br><br><br><br><br>
-    </form>
-
-
-    <?php
-
-
-    session_start();
-    
-
-    $marka0 = $_POST['urun0'];
-    $marka1 = $_POST['urun1'];
-    $marka2 = $_POST['urun2'];
-
- 
-    $sepet = array ($marka0, $marka1, $marka2);
-
-    $_SESSION['sepet']=$sepet;
-
-    
-
-
-    echo "<br>";
-    
-    echo "<table border='1' width='100%'>
-    <tr>
-    <td>Ürün Adı</td>
-    <td>Adet</td>
-    <td>Toplam</td>
-    </tr>";
-
-    foreach($_SESSION as $products){
-        echo "<tr>";
-            foreach($products as $key => $value){
-                
-                
-           }
-        echo "</tr>";
-    }
-    
-    echo "</table>";
-
-
-?>
-<br><br>
-<form action="" method="post">
-<input style= "text-align:right" type="submit" value="Sepeti Sıfırla" name=sifirla>
-</form>
-<?php
-
-
-if($_POST["sifirla"] == TRUE){
-    session_destroy($_SESSION);
-    }
-?>
-
-
 </body>
 </html>
-
-
-
-
-
 
