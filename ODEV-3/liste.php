@@ -1,7 +1,6 @@
 <?php
 session_start();
 include("ayar.php");
-
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +12,6 @@ include("ayar.php");
     <title>Telefon Rehberi Liste</title>
 </head>
 <body style="text-align:center;">
-
     <div style="text-align:center;">
         <a href= "form.php">KAYIT SAYFASI<a> -
         <a href= "liste.php">LİSTE SAYFASI<a> -
@@ -39,7 +37,6 @@ include("ayar.php");
                         <td><a href='kayıt.php?islem=sil&adsoyad=$satir->adsoyad'>Sil</a></td>
                         </tr>";
                     }
-                
             ?>
         <tr>
             <td>
@@ -48,10 +45,6 @@ include("ayar.php");
                 ?>
             </td>
         </tr>
-
     </table>
-
-
-
 </body>
 </html>
