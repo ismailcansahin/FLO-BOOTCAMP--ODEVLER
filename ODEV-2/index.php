@@ -59,7 +59,7 @@
     
             $sepettoplam = 0;
     
-         foreach($_SESSION["sepet"] as $urunno => $urunadet){
+            foreach($_SESSION["sepet"] as $urunno => $urunadet){
                 
                 $urunsira = array_search($urunno, array_column($urunler, 'no'));
                 $urunad = $urunler[$urunsira]["urun"];
@@ -74,17 +74,19 @@
                 <td>$uruntoplam ₺</td>
                 <td><a href='islem.php?hareket=sil&urunno=$urunno'>Sil</a></td>
                 </tr>";
-          }
-          echo "</table>
-          <p style='text-align:right'>
+            }
+                
+                
+    
+            echo "</table>
+         <p style='text-align:right'>
             <a href='islem.php?hareket=bosalt' onclick=\"if (!confirm('Sepetteki Tüm Ürünleri Silmek İstediğinize Emin misiniz?')) return false;\">Sepeti Boşalt</a>
-          </p>
-          <h4 style='text-align:right'>Sepet Toplamı: $sepettoplam ₺</h4>";
-          } 
-         else
-         {
-         echo "<h5 style='text-align:center'>SEPET İÇERİĞİ BOŞ!</h5>";
-         }    
+         </p>
+         <h4 style='text-align:right'>Sepet Toplamı: $sepettoplam ₺</h4>";
+        } 
+        else {
+        echo "<h5 style='text-align:center'>SEPET İÇERİĞİ BOŞ!</h5>";
+        }
     ?>
 </body>
 </html>
