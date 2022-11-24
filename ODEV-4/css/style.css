@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: rgb(255,14,107);
+    background: linear-gradient(0deg, rgba(255,14,107,1) 0%, rgba(255,107,1,1) 39%);
+}
+
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.container .form{
+    padding: 30px;
+}
+
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 3px;
+    width: 37px;
+    background-color: #ff6b01;
+    border-radius: 25px;
+}
+
+.form .input-field{
+    position: relative;
+    margin-top:30px;
+    height: 50px;
+    width: 100%;
+}
+
+.input-field input {
+    position: absolute;
+    height:100% ;
+    width:100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e0e4ee;
+    border-top: 2px solid transparent;
+    font-size: 16px;
+}
+
+.input-field input:is(:focus, :valid) {
+border-bottom-color:#ff6b01;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e0e4ee;
+    font-size: 23px;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+
+.input-field i.showHidePw{
+    right: 0;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+    color:#ff6b01;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    background-color: #ff6b01;
+    color: #FFFFFF;
+    border-radius:6px ;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:  all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #ff6b01
+}
+
+.form .login-signup{
+    margin-top:30px ;
+    text-align: center;
+}
+
+.table-container{
+    width: auto;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.table-id{
+    width: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-bottom: 2px solid #e0e4ee;
+    border-top: 2px solid transparent;
+
+}
+
+.table-name{
+    width: 210px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-bottom: 2px solid #e0e4ee;
+    border-top: 2px solid transparent;
+    
+
+}
+
+.table-tc{
+    width: 210px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-bottom: 2px solid #e0e4ee;
+    border-top: 2px solid transparent;
+
+}
+
+.table-durum{
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-bottom: 2px solid #e0e4ee;
+    border-top: 2px solid transparent;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
