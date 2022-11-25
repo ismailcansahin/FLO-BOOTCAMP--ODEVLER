@@ -47,6 +47,7 @@ $baglan = baglan();
             <td class="table-name" style="color: #ff6b01"><b>AD SOYAD</b></td>
             <td class="table-tc" style="color: #ff6b01"><b>TC KİMLİK NO</b></td>
             <td class="table-durum" style="color: #ff6b01"><b>DURUM</b></td>
+            <td class="table-id" style="color: #ff6b01"><b>SİL</b></td>
         </tr>
     <?php
         $sorgu = $baglan->prepare("select * from form");
@@ -58,7 +59,10 @@ $baglan = baglan();
             <td class='table-id'>$sirano</td>
             <td class='table-name'>$satir[adsoyad]</td>
             <td class='table-tc'>$satir[tckimlik]</td>
-            <td class='table-durum'>$satir[durum]</td>            
+            <td class='table-durum'>$satir[durum]</td>
+            <td class='table-id'>
+            <a class='link' href='sil.php?islem=form&id=$satir[id]'><i style='color: #ff6b01' class='uil uil-multiply'></i></a>
+            </td>            
             </tr>";
         }
     ?>
@@ -70,6 +74,6 @@ $baglan = baglan();
 
 
 
-
+<script src="js/script.js" type="text/javascript"></script>    
 </body>
 </html>
