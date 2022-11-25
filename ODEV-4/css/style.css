@@ -133,8 +133,14 @@ border-bottom-color:#ff6b01;
     padding-left: 20px;
     border-bottom: 2px solid #e0e4ee;
     border-top: 2px solid transparent;
-
 }
+
+.link{
+    text-decoration: none;
+    color: yellow;
+}
+
+
 
 .table-name{
     width: 210px;
@@ -144,8 +150,6 @@ border-bottom-color:#ff6b01;
     padding-left: 20px;
     border-bottom: 2px solid #e0e4ee;
     border-top: 2px solid transparent;
-    
-
 }
 
 .table-tc{
@@ -156,7 +160,6 @@ border-bottom-color:#ff6b01;
     padding-left: 20px;
     border-bottom: 2px solid #e0e4ee;
     border-top: 2px solid transparent;
-
 }
 
 .table-durum{
@@ -169,13 +172,13 @@ border-bottom-color:#ff6b01;
     border-top: 2px solid transparent;
 }
 
+
 .logo{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-top: 40px;
     margin-bottom: 40px;
-    
 }
 
 .logo img{
