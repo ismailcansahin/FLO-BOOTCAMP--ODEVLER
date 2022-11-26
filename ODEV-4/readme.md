@@ -7,4 +7,4 @@ doğrulanarak, sonucu da diğer bilgilerle birlikte veritabanına kaydedildi.
 geriye kalan sayının 10ʹa göre modu 10. haneye eşittir.
 (4) 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. hanelerin toplamının 10ʹa göre modu 11. haneye eşittir.
 
-<img src="ODEV-4/gif.gif" width="auto">
+<img src="https://github.com/ismailcansahin/FLO-BOOTCAMP--ODEVLER/blob/main/ODEV-4/gif.gif" width="auto">
