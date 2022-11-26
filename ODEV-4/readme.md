@@ -6,3 +6,5 @@ doğrulanarak, sonucu da diğer bilgilerle birlikte veritabanına kaydedildi.
 (3) 1. 3. 5. 7. ve 9. hanelerin toplamının 7 ile çarpımından, 2. 4. 6. ve 8. hanelerin toplamı çıkartıldığında
 geriye kalan sayının 10ʹa göre modu 10. haneye eşittir.
 (4) 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. hanelerin toplamının 10ʹa göre modu 11. haneye eşittir.
+
+<img src="ODEV-4/gif.gif" width="auto">
