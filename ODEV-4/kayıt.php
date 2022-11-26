@@ -2,7 +2,6 @@
 require_once 'baglan.php';
 $baglan = baglan();
 
-
 $adsoyad = $_POST["adsoyad"];
 
 if(is_numeric($_POST["tckimlik"]) == TRUE){
@@ -15,10 +14,8 @@ else{
     </script>";
     die();
 }
-
-    
+   
 $tc  = array_map('intval', str_split($tckimlik));
-
 
 class Kayıt {
     private $toplam1;
@@ -57,7 +54,4 @@ class Kayıt {
     $ekle = $sorgu->execute(array(NULL, $adsoyad, $tckimlik, $durum2));
     $sorgu->closeCursor(); unset($sorgu);
     echo "<script>window.location.href='form.php';</script>";
-
-
 ?>
-
