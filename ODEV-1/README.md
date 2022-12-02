@@ -11,6 +11,9 @@ hesaplayarak ekrana yazdır. Eğer boş kalan ağıllar varsa 0 (sıfır) değer
 - Toplam kapasite ve varsa artan koyun sayısı bulundu.
 - Veriler ekrana echo komutu ile yazdırıldı.
 - Kalan koyun sayısı bulundu.
-- 
+- FOR döngüsü içinde içinde eğer kalan koyun sayısı ağıl kapasitesinden büyükse ağıl kapasitesi kadar, değilse kalan koyun sayısı kadar yazdırıldı. 
+
+![alt](http://)
+
 
 
