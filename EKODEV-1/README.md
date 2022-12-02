@@ -23,7 +23,7 @@ ekrana yazdırılacak
 4) Toplam tutar, KDV gibi bilgilerle fotura 
 ekrana basılacak.
 
-##Yapılacak ve kullanılacak fonksiyonlarsa 
+## Yapılacak ve kullanılacak fonksiyonlarsa 
 şöyledir:
 Ot fiyatının hesaplamaya girmesi için aldığı ot 
 ismine göre birim fiyat döndüren bir 
