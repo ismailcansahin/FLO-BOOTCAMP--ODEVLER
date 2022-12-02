@@ -14,6 +14,7 @@ sepete eklendikçe aynı sayfada bir de sepet içeriği listele.
 - index.php dosyasında inputlar ile alınan veriler GET ve POST metodları ile islem.php dosyasında işlendi.
 - Gerekli kontrolü sağlayan ürünler sepete eklendi.
 - Sepet detayı ve toplam miktar tablo halinde bastırıldı.
+- Sepet içerisinden ürün çıkarmak için sil butonu eklendi.
 
 
 ## Görünüm
