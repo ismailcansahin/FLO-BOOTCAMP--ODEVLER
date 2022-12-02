@@ -1,6 +1,5 @@
 # 3. Hafta Ödevi
 
-## Yapılanlar
 Bir aktar farklı otlar satmaktadır. Müşteriler dükkâna gelip bu otlardan değişen oranlarda istediği 
 kadar alabilmektedir. Dükkân sahibinin her bir müşterisi için 
 fatura hesabı yapacak bir programa ihtiyacı vardır. Otların 
@@ -10,6 +9,9 @@ belirlenmektedir. Her bir ot türü tazeliğini kaybettiğinde
 farklı oranlarda fiyat kaybına uğramaktadır. Bu kayıp oranı 
 yine yandaki tabloda verilmiştir. Buna göre sırasıyla aşağıdaki 
 işlemleri yapan bir programını yazınız.
+
+
+## Yapılanlar
 
 1) O günün ot birim fiyatları (1 kg için) 
 girilecek
@@ -23,15 +25,16 @@ ekrana yazdırılacak
 4) Toplam tutar, KDV gibi bilgilerle fotura 
 ekrana basılacak.
 
-## Yapılacak ve kullanılacak fonksiyonlarsa 
-şöyledir:
-Ot fiyatının hesaplamaya girmesi için aldığı ot 
+
+## Yapılacak ve kullanılacak fonksiyonlar 
+
+- Ot fiyatının hesaplamaya girmesi için aldığı ot 
 ismine göre birim fiyat döndüren bir 
-otBirimFiyat isimli bir fonksiyon yapınız.
-Aldığı ot ismi, tazelik durumu ve toplam fiyat 
+otBirimFiyat isimli bir fonksiyon yazıldı
+- Aldığı ot ismi, tazelik durumu ve toplam fiyat 
 bilgisine göre yapılacak düşüşü (tazelik etkisi) 
 hesaplayacak tazelikEtkisi isimli bir fonksiyon 
-yapınız.
+yazıldı
 
 ## Görünüm
 
