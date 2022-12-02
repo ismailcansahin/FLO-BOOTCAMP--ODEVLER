@@ -1,5 +1,9 @@
-Bir formdan gelen Ad Soyad ve TC Kimlik numarası verisini veritabanına kaydeden bir uygulama hazırlandı.  
-Veritabanına kayıt etmeden önce TC Kimlik numarasını aşağıdaki kurallara göre bir Class içerisinde  
+# 4. Hafta Ödevi
+
+## Yapılanlar
+
+- Bir formdan gelen Ad Soyad ve TC Kimlik numarası verisini veritabanına kaydeden bir uygulama hazırlandı.  
+- Veritabanına kayıt etmeden önce TC Kimlik numarasını aşağıdaki kurallara göre bir Class içerisinde  
 doğrulanarak, sonucu da diğer bilgilerle birlikte veritabanına kaydedildi.  
 (1) TC kimlik numaraları 11 hanelidir ve her hanesi rakamsal değerdedir.  
 (2) İlk hane hiçbir zaman 0 olamaz.  
@@ -7,4 +11,16 @@ doğrulanarak, sonucu da diğer bilgilerle birlikte veritabanına kaydedildi.
 geriye kalan sayının 10ʹa göre modu 10. haneye eşittir.  
 (4) 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. hanelerin toplamının 10ʹa göre modu 11. haneye eşittir.  
 
-<img src="https://github.com/ismailcansahin/FLO-BOOTCAMP--ODEVLER/blob/main/ODEV-4/gif.gif" width="auto">
+
+
+## Görünüm
+
+![alt](img/gorunum.gif)
+
+
+
+
+
+
+
+
