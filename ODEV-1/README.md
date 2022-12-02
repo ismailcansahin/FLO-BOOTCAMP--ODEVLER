@@ -13,7 +13,9 @@ hesaplayarak ekrana yazdır. Eğer boş kalan ağıllar varsa 0 (sıfır) değer
 - Kalan koyun sayısı bulundu.
 - FOR döngüsü içinde içinde eğer kalan koyun sayısı ağıl kapasitesinden büyükse ağıl kapasitesi kadar, değilse kalan koyun sayısı kadar yazdırıldı. 
 
-![alt](http://)
+
+
+![alt](img/cikti.PNG)
 
 
 
