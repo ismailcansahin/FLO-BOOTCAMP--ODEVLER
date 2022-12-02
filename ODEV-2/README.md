@@ -19,7 +19,7 @@ sepete eklendikçe aynı sayfada bir de sepet içeriği listele.
 
 ## Görünüm
 
-![alt](img/gorunum.GIF)
+![alt](img/gorunum.gif)
 
 
 
