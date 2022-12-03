@@ -18,7 +18,7 @@ geriye kalan sayının 10ʹa göre modu 10. haneye eşittir.
 ![alt](img/gorunum.gif)
 
 
-![alt](https://i.hizliresim.com/d5a5f3w.jpg)
+
 
 
 
