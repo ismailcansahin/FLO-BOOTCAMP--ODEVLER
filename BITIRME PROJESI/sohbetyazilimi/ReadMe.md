@@ -10,7 +10,7 @@ PHP ve AJAX ile yönetim panelli sohbet yazılımı
 
 ### Proje Video
 
-![alt](README_src/video.gıf.gif)  
+![alt](README_src/video.gif)  
 
 Video Youtube Link:https://youtu.be/BStga0JBbfQ
 
