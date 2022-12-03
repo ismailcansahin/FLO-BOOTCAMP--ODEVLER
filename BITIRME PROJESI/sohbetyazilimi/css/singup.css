@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:100vh;
+    background: rgb(255,14,107);
+    background: linear-gradient(0deg, rgba(255,14,107,1) 0%, rgba(255,107,1,1) 39%);
+}
+
+/* Giriş Ekranı Başlangıç */
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.container .form{
+    padding: 30px;
+}
+
+/* Başlık */
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 3px;
+    width: 37px;
+    background-color: rgba(255,107,1,1);
+    border-radius: 25px;
+}
+
+/* İnput Alanları Başlangıç */
+.form .input-field{
+    position: relative;
+    margin-top:30px;
+    height: 50px;
+    width: 100%;
+}
+.input-field input {
+    position: absolute;
+    height:100% ;
+    width:100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e0e4ee;
+    border-top: 2px solid transparent;
+    font-size: 16px;
+}
+.input-field input:is(:focus, :valid) {
+border-bottom-color:rgba(255,107,1,1) ;
+}
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e0e4ee;
+    font-size: 23px;
+}
+.input-field i.icon{
+    left: 0;
+}
+.input-field input:is(:focus, :valid) ~ i {
+    color:rgba(255,107,1,1) ;
+}
+.form .image input{
+    position: absolute;
+    top: 22%;
+}
+.form a {
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+.form a.text{
+    color: rgba(255,107,1,1);
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    background-color: rgba(255,107,1,1);
+    color: #FFFFFF;
+    border-radius:6px ;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:  all 0.3s ease;
+}
+.button input:hover{
+    background-color: rgba(255,107,1,1)
+}
+.form .login-signup{
+    margin-top:30px ;
+    text-align: center;
+}
+
+/* Sayfa Al Kısımda ki FLO Logosu */
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
