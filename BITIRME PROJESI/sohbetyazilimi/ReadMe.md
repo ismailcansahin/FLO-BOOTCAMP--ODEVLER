@@ -86,15 +86,7 @@ Video Youtube Link:https://youtu.be/BStga0JBbfQ
 
 
 
-
-
-
-
-
-
-
-
-
+## Projeye Giriş İçin Bilgiler
 
 Giriş Ekranı Gerekli Link http://localhost/sohbetyazilimi/login.php
 Mail: batalms@gmail.com
